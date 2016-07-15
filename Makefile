@@ -1,6 +1,6 @@
-DOCUMENT_NAME = dokumentation
+DOCUMENT_NAME = documentation
 OUTPUT_DIR    = output
-ABGABE_DIR    = ../abgabe/
+RELEASE_DIR    = ../release/
 
 
 ####latexmk

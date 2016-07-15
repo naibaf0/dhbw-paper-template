@@ -1,4 +1,4 @@
-%!TEX root = ../dokumentation.tex
+%!TEX root = ../documentation.tex
 
 %
 % Nahezu alle Einstellungen koennen hier getaetigt werden
@@ -37,8 +37,8 @@
 }
 \newcommand{\langstr}[1]{\einstellung{lang#1}}
 
-\input{ads/einstellungen_liste} % verfügbare Einstellungen
-\input{einstellungen} % lese Einstellungen
+\input{ads/settings_list} % verfügbare Einstellungen
+\input{settings} % lese Einstellungen
 
 \input{lang/strings} % verfügbare Strings
 \input{lang/\sprache} % Übersetzung einlesen
@@ -123,7 +123,7 @@
 % Literaturverweise (sowohl deutsch als auch englisch)
 \iflang{de}{%
 \usepackage[
-	backend=biber,		% empfohlen. Falls biber Probleme macht: bibtex
+	backend=bibtex,		% empfohlen. Falls biber Probleme macht: bibtex
 	bibwarn=true,
 	bibencoding=utf8,	% wenn .bib in utf8, sonst ascii
 	sortlocale=de_DE,
@@ -132,7 +132,7 @@
 }
 \iflang{en}{%
 \usepackage[
-	backend=biber,		% empfohlen. Falls biber Probleme macht: bibtex
+	backend=bibtex,		% empfohlen. Falls biber Probleme macht: bibtex
 	bibwarn=true,
 	bibencoding=utf8,	% wenn .bib in utf8, sonst ascii
 	sortlocale=en_US,
