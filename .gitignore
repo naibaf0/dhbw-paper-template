@@ -1,7 +1,7 @@
 *.synctex.gz
 .project
 output/
-dokumentation.pdf
+documentation.pdf
 *.pdf
 *.swp
 *.backup
