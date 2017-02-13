@@ -13,7 +13,7 @@
 
 \input{ads/header}
 
-\makeglossaries
+\makeglossaries{}
 \input{ads/glossary}
 
 \begin{document}
@@ -40,7 +40,7 @@
 
 	\pagestyle{plain}		% nur Seitenzahlen im Fuß
 	
-	\RedeclareSectionCommand[beforeskip=\kapitelabstand         ]{chapter} % stellt Abstand vor Kapitelüberschriften ein
+  \RedeclareSectionCommand[beforeskip=\kapitelabstand{}         ]{chapter} % stellt Abstand vor Kapitelüberschriften ein
 
 	% Inhaltsverzeichnis
 	\begin{spacing}{1.1}
@@ -62,21 +62,21 @@
 	\newpage
 
 	% Abkürzungsverzeichnis
-	\cleardoublepage
+  \cleardoublepage{}
 	\input{ads/acronyms}
 
 	% Abbildungsverzeichnis
-	\cleardoublepage
+  \cleardoublepage{}
 	\listoffigures
 
 	%Tabellenverzeichnis
-	\cleardoublepage
+  \cleardoublepage{}
 	\listoftables
 
 	% Quellcodeverzeichnis
-	\cleardoublepage
-	\lstlistoflistings
-	\cleardoublepage
+  \cleardoublepage{}
+  \lstlistoflistings{}
+  \cleardoublepage{}
 
 	\pagenumbering{arabic}
 	
@@ -96,8 +96,8 @@
 	\clearpage
 
 	% Literaturverzeichnis
-	\cleardoublepage
-	\printbibliography
+  \cleardoublepage{}
+  \printbibliography{}
 
 	% Glossar
 	\printglossary[style=altlist,title=\langglossar]
