@@ -11,9 +11,7 @@
 	oneside,			% Einseitiger Druck.
 	12pt,				% Schriftgroesse
 	parskip=half,		% Halbe Zeile Abstand zwischen Absätzen.
-%	topmargin = 10pt,	% Abstand Seitenrand (Std:1in) zu Kopfzeile [laut log: unused]
 	headheight = 12pt,	% Höhe der Kopfzeile
-%	headsep = 30pt,	% Abstand zwischen Kopfzeile und Text Body  [laut log: unused]
 	headsepline,		% Linie nach Kopfzeile.
 	footsepline,		% Linie vor Fusszeile.
 	footheight = 16pt,	% Höhe der Fusszeile
@@ -70,6 +68,7 @@
 \usepackage[printonlyused]{acronym} % falls gewünscht kann die Option footnote eingefügt werden, dann wird die Erklärung nicht inline sondern in einer Fußnote dargestellt
 \usepackage{listings}
 \usepackage{booktabs}
+\usepackage[outputdir=output, chapter]{minted}
 
 % Notizen. Einsatz mit \todo{Notiz} oder \todo[inline]{Notiz}. 
 \usepackage[obeyFinal,backgroundcolor=yellow,linecolor=black]{todonotes}
@@ -157,13 +156,12 @@
 % Bildpfad
 \graphicspath{{images/}}
 
-% Einige häufig verwendete Sprachen
-\lstloadlanguages{PHP,Python,Java,C,C++,bash}
 \listingsettings{}
+
 % Umbennung des Listings
-\renewcommand\lstlistingname{\langlistingname}
-\renewcommand\lstlistlistingname{\langlistlistingname}
-\def\lstlistingautorefname{\langlistingautorefname}
+%\renewcommand\lstlistingname{\langlistingname}
+%\renewcommand\lstlistlistingname{\langlistlistingname}
+%\def\lstlistingautorefname{\langlistingautorefname}
 
 % Abstände in Tabellen
 \setlength{\tabcolsep}{\spaltenabstand}

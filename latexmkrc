@@ -33,6 +33,7 @@ sub mypdflatex {
   my $new_dir = $path . "../";
   my @args = @_;
   unshift(@args, "-synctex=1");
+  unshift(@args, "-shell-escape");
 
   $return = system 'pdflatex', @args;
 
