@@ -9,7 +9,7 @@ $recorder = 1;
 
 $bibtex_use = 2; # remove .bbl from output on clean
 # remove all temporary files which are not removed automatically from output on clean
-@generated_exts = qw(fls lof lot toc glg glo gls ist lol run.xml synctex.gz);
+@generated_exts = qw(fls lof lot toc glg glo gls ist lol pyg run.xml synctex.gz);
 
 add_cus_dep('glo', 'gls', 0, 'run_makeglossaries');
 add_cus_dep('acn', 'acr', 0, 'run_makeglossaries');
