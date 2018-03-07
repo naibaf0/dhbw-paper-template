@@ -1,6 +1,5 @@
 DOCUMENT_NAME = documentation
 OUTPUT_DIR    = output
-RELEASE_DIR    = ../release/
 
 
 ####latexmk
